@@ -1,11 +1,15 @@
 # Pneumonia Detection Device Using CMSIS Neural Network on STM-32
 ## MKEL1123-Milestone 5
 
-## Software and Hardware
-- Edge Impulse
-- STM-32
+## Prerequisite
+### Software
+- [Edge Impulse](https://www.edgeimpulse.com/)
+- [STM-32cube IDE](https://www.st.com/en/development-tools/stm32cubeide.html)
+- [PuTTY](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html) 
+
+### Hardware
 - USB-A to Mini-A cable
-- PuTTY (https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)  
+- NUCLEO-F446RE Board 
 
 ## Procedure
 A brief procedure can be found in [Procedure](Procedure/procedure.md)
