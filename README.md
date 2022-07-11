@@ -68,6 +68,55 @@ After having the pack installed. Go back to .ioc tab and go to "Pinout & Configu
 
 ![pack mode](https://user-images.githubusercontent.com/104577236/178263711-8a053c22-d653-4c6b-80c6-286b5e40d822.jpg)
 
+![Picture1](https://user-images.githubusercontent.com/104575093/178266313-83d18dc1-1924-4c82-b6fd-aba87c2669ae.png)
 
+Done for the pack installed part. Next we will upload the pack onto the board. To do so, we save the configuration we have done on .ioc tab then a window pop out will show to generate the code. Click "Yes". This is the important part, make sure "Middleware" folder is generated because this is where all your impulse and required libraries are. Rename the main.c file under Core/Src to main.cpp as C++ language is preferred.  
+
+![Picture2](https://user-images.githubusercontent.com/104575093/178266529-139918b9-fd3d-472f-82f5-7ce42830b22e.png)
+
+Edit main.cpp file by copy and paste this code from here:
+[main.cpp](https://github.com/knightnight18/MKEL1123-Milestone5-Pneumonia-Detection-Device-Using-CMSIS-Neural-Network-on-STM-32/blob/50da393551f789dbc152ae24ccc1fe2984f5527d/main.cpp) 
+
+![Picture3](https://user-images.githubusercontent.com/104575093/178267073-cddb2a0e-7c09-4550-a36a-caaffe57c498.png)
+
+To upload the code into the board, click on the play button icon. Leave all the settings to default and make sure you already connected your board prior clicking the play button icon. This message will show if you have successfully uploaded your code onto the board.
+
+![Picture4](https://user-images.githubusercontent.com/104575093/178267348-717950c0-1c8c-4067-9bdb-24ef31139dba.png)
+
+To display the output, open puTTY. Then choose "Serial" as the connection type. Set the speed to "115200". For the serial line, to know which COMx to use, open "Device Manager" to check. Below is the setting we use.
+
+![Picture5](https://user-images.githubusercontent.com/104575093/178267521-6e77d613-bed5-4a69-98b3-54b3e1668ef5.png)
+![Picture6](https://user-images.githubusercontent.com/104575093/178269246-0a85fc89-81e0-4bbd-8541-0cc391851cdb.png)
+
+The result will be shown on puTTy interface as shown below.
+
+![Picture7](https://user-images.githubusercontent.com/104575093/178269592-963df650-d694-4d8b-aad7-b61926319afc.png)
+
+To change the dataset, we can copy the raw features of each image. To do so, go back to Edge Impulse, at the left side, choose "Live Classification" and under "Classify existing test sample" choose which image you want to have its raw features. Then click the "Load sample" and wait for classification results to come out. Then, copy the raw features and paste it into this line of code in the main.cpp file.
+
+![Picture8](https://user-images.githubusercontent.com/104575093/178269769-1e28961e-4f5e-4898-ac14-1284122b4811.png)
+
+![Picture9](https://user-images.githubusercontent.com/104575093/178269865-15c1a518-a7b8-424f-8c7a-87e2c900bb63.png)
+
+## Collaborator 
+Muhammad Syafiq Bin Abd Halim (MKE211062)
+Umi Nur Idayu Binti Mohd Hisham (MKE211073)
+Aziidah Izzati Binti Abdul Basit (MKE211068)
+
+## References 
+1. https://bmcmedinformdecismak.biomedcentral.com/articles/10.1186/s12911-019-0792-1
+2. https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0256630
+3. https://ieeexplore.ieee.org/document/9057809
+4. https://www.hindawi.com/journals/jhe/2019/4180949/ 
+5. https://data.mendeley.com/datasets/rscbjbr9sj/2 
+6. https://www.sciencedirect.com/science/article/pii/S0169743921000241
+7. https://peerj.com/articles/cs-495/
+8. https://www.techscience.com/cmc/v66n3/41086
+9. https://www.mdpi.com/2076-3417/10/9/3233
+10. https://www.sciencedirect.com/science/article/pii/S1361841521001717
+11. https://link.springer.com/article/10.1007/s12559-020-09787-5
+12. https://books.google.com.my/books?hl=en&lr=&id=GpP-DwAAQBAJ&oi=fnd&pg=PA457&dq=Z.+S.,+%22An+Efficient+Method+to+Predict+Pneumonia+From+Chest+X-rays+Using+Deep+Learning+Approach.,%22+The+Importance+of+Health+Informatics+in+Public+Health+During+A+Pandemic,+p.+457,+2020.&ots=ea__-4xMDC&sig=P9kxJ5I_ygoS6FDO4Jnl7j_WnTM#v=onepage&q&f=false
+13. https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0256630 
+ 
 
 
