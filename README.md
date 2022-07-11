@@ -5,6 +5,7 @@
 - Edge Impulse
 - STM-32
 - USB-A to Mini-A cable
+- PuTTY (https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html)  
 
 ## Procedure
 A brief procedure can be found in [Procedure](Procedure/procedure.md)
