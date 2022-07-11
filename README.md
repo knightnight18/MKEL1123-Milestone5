@@ -6,8 +6,8 @@
 - STM-32
 - USB-A to Mini-A cable
 
-## [Procedure](Procedure/procedure.md)
-
+## Procedure
+A brief procedure can be found in [Procedure](Procedure/procedure.md)
 
 ## Collaborator 
 - Muhammad Syafiq Bin Abd Halim (MKE211062) 
